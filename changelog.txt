@@ -1,0 +1,11 @@
+
+Pangaea update 0.1.2 - 26 July 2014
+
+- Added Lightbox gallery section (see elements page)
+- Added Instagram image feed section (see elements page)
+- Updated to an SMTP email script for contact form via Swift Mailer library
+- Variant Bug Fixes
+- Variant now allows editing map embed code
+- Variant now allows editing video source and poster image
+- Clone/Delete whole slide in sliders in Variant is now easier
+- Updated docs

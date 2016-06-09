@@ -1,0 +1,424 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Getting Started | Pangaea Docs</title>
+
+    <meta name="description" content="Documentation and reference library for Medium Rare Pangaea. JavaScript, CSS, components, grid and more.">
+    <meta name="author" content="Medium Rare, inc. Medium Rare network also includes mediumra.re">
+    <meta name="copyright" content="Medium Rare Copyright (c) 2014">
+
+    <link href='assets/css/docs.css' rel='stylesheet' />
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+  <body class="antialiased hide-extras">
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+         <title>Pangaea Documentation</title><meta name="description" content="Pangaea from Medium Rare is the most advanced responsive front-end framework in the world." />
+ 
+
+<!-- <nav class="tab-bar show-for-small">
+  <a class="off-canvas-left-toggle menu-icon ">
+    <span></span>
+  </a>  
+</nav> -->
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="index.html">Pangaea Documentation</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-form">
+        <a href="http://mediumrare.ticksy.com/" class="small button">Support Forum</a>
+    </ul>
+  </section>
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a class="left-off-canvas-toggle menu-icon">
+    <span>Pangaea Documentation</span>
+  </a>
+</nav>
+
+<aside class="marketing-left-off-canvas-menu">
+
+  <ul class="off-canvas-list">
+    <li><label class="first">Pangaea</label></li>
+  </ul>
+
+  <hr>
+
+  <ul class="off-canvas-list">
+	<label>Contents</label>
+
+      <li><a href="#file-structure" data-search="">File Structure</a></li>
+      <li><a href="#grid-structure" data-search="Styles">Grid System</a></li>
+      <li><a href="#navigation-styles" data-search="SCSS">Navigation Styles</a></li>
+      <li><a href="#footer-styles" data-search="Rails,Gem">Footer Styles</a></li>
+      <li><a href="#icon-pack" data-search="">Using Icons</a></li>
+      <li><a href="#sliders" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Using Sliders</a></li>
+      <li><a href="#mail-form" data-search="">Contact Form</a></li>
+
+    </ul>
+
+    <hr>
+
+  </ul>
+</aside>
+
+<a class="exit-off-canvas" href="index.html#"></a>
+
+
+        <section role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-4 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+  <h5>Pangaea Documentation</h5>
+  <form>
+    <!--  <label>Search Documentation</label> -->
+  </form>
+
+  <nav>
+    <ul class="side-nav">
+      <li class="heading">Contents</li>
+
+      <li><a href="#file-structure" data-search="">File Structure</a></li>
+      <li><a href="#grid-structure" data-search="Styles">Grid System</a></li>
+      <li><a href="#navigation-styles" data-search="SCSS">Navigation Styles</a></li>
+      <li><a href="#footer-styles" data-search="Rails,Gem">Footer Styles</a></li>
+      <li><a href="#icon-pack" data-search="">Using Icons</a></li>
+      <li><a href="#sliders" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Using Sliders</a></li>
+      <li><a href="#mail-form" data-search="">Contact Form</a></li>
+    </ul>
+  </nav>
+
+
+
+</div>
+              </div>
+            </div>
+            <div class="large-9 medium-8 columns">
+              <h1 id="getting-started">Getting Started</h1>
+              <h3 class="subheader">Hello and thankyou for purchasing Pangaea by Medium Rare. This documentation will give you an understanding of how Pangaea is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us via the button in the top right-hand corner.</h3>
+			  <h3 class="subheader"><strong>Essentials:</strong></h3>
+			  <ul>
+			  	<li>This template is based on ZURB Foundation 5 responsive framework</li>
+			  	<li>Chrome for Win or Mac (use the inspector, right click -> inspect element to make your life easier)</li>
+			  	<li>A decent text editor like Notepad++ for Win or Text Wrangler for Mac</li>
+			  </ul>
+
+<hr>
+<a id="file-structure"></a>
+<div class="row">
+  <div class="medium-12 columns">
+    <h3><strong>1. File Structure</strong></h3>
+    <p>As Pangaea is an HTML template, it uses a number of .html pages in conjunction with css stylesheets and a number of javascript plugins. The following is a brief overview of the files and a look at some prominent features.</p>
+	<hr>
+  </div>
+
+
+	<div class="medium-11 columns right">
+		<h3>HTML Files</h3>
+		<p>Each page that comes included with Pangaea is housed inside its own HTML file. You will find all these files residing in the root directory of the download package.</p>
+		<p>Note that index.html will be the file your browser defaults to when you navigate to the Pangaea directory in your web browser</p>
+		<hr>
+		<h3>CSS Files</h3>
+		<p>Pangaea comes with a number of CSS files, many of which you will likely never touch. There are two however, that you will likely edit if you are changing the style of the site in anyway.</p>
+		<p><strong>style.css</strong><br />This is the main stylesheet for the template and includes all styles relating to the appearance of the elements you see inside each page. This stylesheets has been commented for ease of use and all style rules are grouped under particular headings such as /*** SLIDER STYLES ***/</p>
+		<p><strong>responsive.css</strong><br />As the name suggests, this is where you can find styles specific to devices other than desktop. The files is sectioned into smaller screened laptops, smartphones and tablets (both portrait and landscape) and any changes made to these sections will only be visible on the appropriate device (or at the target screen size)</p>
+		<hr>
+		<h3>Javascript Files</h3>
+		<p>As with the CSS files, there are a number of JS files that you'll unlikely need to touch. They are mostly plugins such as isotope and smooth scroll. Unless you know what you're doing, don't touch the JS files as any tinkering could result in undesired behaviour back in the browser.</p>
+		<p><strong>scripts.js</strong><br />This is the main scripts file for the template that includes all functions specific to the theme such as control of the navigation and slider declarations among other things. You will see that the file is structured as <code>$(document).ready(function(){});</code> followed by <code>$(window).load(function(){});</code></p>
+		<hr>
+	</div>
+	
+	<a id="grid-structure"></a>
+	<div class="medium-12 columns">
+		<h3><strong>1.1 Grid System</strong></h3>
+		<p>Pangaea is based on ZURB's awesome Foundation 5. The 12 column grid system is flexible and easy to understand. For a more thorough explanation of the grid go <a target="_blank" href="http://foundation.zurb.com/docs/components/grid.html">here</a></p>
+		<hr>
+	</div>
+
+	<a id="navigation-styles"></a>
+	<div class="medium-12 columns">
+		<h3><strong>2. Navigation Styles</strong></h3>
+		<p>There are a number of navigation styles available in Pangaea as viewable in the demo page (using the style switcher toggle).<br />Achieving these styles is a simple matter of adding the appropriate class to the <code>&lt;nav&gt;</code> element.</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p>Add the following class to your nav to achieved the desired appearance:</p>
+		<ul>
+			<li><strong>nav-transparent</strong> is a white navigation with no background suitable for darker image backgrounds</li>
+			<li><strong>nav-transparent-dark</strong> is a dark navigation with no background suitable for light image backgrounds</li>
+			<li><strong>nav-light</strong> is a dark navigation with white background suitable for darker image backgrounds</li>
+			<li><strong>nav-dark</strong> is a white navigation with dark background suitable for light image backgrounds</li>
+		</ul>
+		<hr>
+	</div>
+	
+	<a id="footer-styles"></a>
+	<div class="medium-12 columns">
+		<h3><strong>3. Footer Styles</strong></h3>
+		<p>There are two footer styles available in Pangaea as viewable in the demo page (using the style switcher toggle).<br />As the contents of these footers differs considerably, the easiest way to switch is to simply replace the current footer code with one of the following</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p><strong>Classic Footer (with widgets and all)</strong></p>
+		<pre><code>&lt;footer class="dark"&gt;
+		
+		&lt;div class="row"&gt;
+			&lt;div class="medium-3 columns"&gt;
+				&lt;img alt="Logo" src="img/logo-light.png" class="logo push-bottom" /&gt;
+				&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				&lt;/p&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="medium-3 columns"&gt;
+				&lt;h6&gt;Recent Posts&lt;/h6&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="#"&gt;How to create an awesome blog like this &lt;i class="icon arrow_right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Loving you is easy coz you're beautiful &lt;i class="icon arrow_right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Multi-purpose: Necessary evil? &lt;i class="icon arrow_right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;What else is in the Teaches of Peaches? &lt;i class="icon arrow_right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="medium-3 columns"&gt;
+				&lt;h6&gt;Recent Tweets&lt;/h6&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_twitter"&gt;&lt;/i&gt; @craig800 Thanks, glad you like it!&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_twitter"&gt;&lt;/i&gt; @james_h Yes, that is possible :)&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;Follow &lt;a href="#"&gt;&lt;strong&gt;@mediumrarethemes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="medium-3 columns"&gt;
+				&lt;h6&gt;Contact Us&lt;/h6&gt;
+				&lt;p class="push-bottom-small"&gt;
+					Level 7 - 26A&lt;br /&gt;
+					300 Collins St.&lt;br /&gt;
+					Melbourne, Vic 3000
+				&lt;/p&gt;
+				&lt;p&gt;
+					&lt;i class="icon icon_phone"&gt;&lt;/i&gt; +61 4823 4762&lt;br /&gt;
+					&lt;i class="icon icon_mail"&gt;&lt;/i&gt; hello@pangaea.net
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="footer-lower"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="medium-7 columns"&gt;
+					&lt;span&gt;© 2014 Pangaea - Original Design by &lt;a href="#"&gt;&lt;strong&gt;MediumRare&lt;/strong&gt;&lt;/a&gt; - All Rights Reserved&lt;/span&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="medium-5 columns text-right"&gt;
+					&lt;ul class="social-profiles"&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_dribbble"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+			
+		
+	&lt;/footer&gt;</code></pre>
+	<br />
+	<p><strong>Creative Footer (with social links and a we love tagline)</strong></p>
+	<pre><code>&lt;footer class="dark footer-alt"&gt;
+	
+			&lt;div class="row"&gt;
+				&lt;div class="medium-12 columns text-center"&gt;
+					&lt;ul class="social-profiles"&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_dribbble"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon social_linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;span class="sub"&gt;Made with &lt;i class="icon icon_heart"&gt;&lt;/i&gt; in Melbourne&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		
+			&lt;div class="footer-lower"&gt;
+				&lt;div class="row"&gt;
+					&lt;div class="medium-7 columns"&gt;
+						&lt;span&gt;© 2014 Pangaea - Original Design by &lt;a href="#"&gt;&lt;strong&gt;MediumRare&lt;/strong&gt;&lt;/a&gt; - All Rights Reserved&lt;/span&gt;
+					&lt;/div&gt;
+				
+					&lt;div class="medium-5 columns text-right"&gt;
+						&lt;a href="#top" class="inner-link button button-small"&gt;Top &lt;i class="icon arrow_carrot-up"&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+	
+		&lt;/footer&gt;</pre></code>
+		<hr>
+	</div>
+	
+	<a id="icon-pack"></a>
+	<div class="medium-12 columns">
+		<h3><strong>4. Using the Icon Pack</strong></h3>
+		<p>Pangaea makes use of two awesome icon packs, both provided by <a target="_blank" href="http://www.elegantthemes.com">Elegant Themes</a>. The Elegant Icon Pack and the Elegant Themes Line Icons. Using these icon packs is a simple matter of knowing the correct class to use.</p>
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p>You can find the appropriate class names for both icon packs here: <a target="blank" href="http://www.elegantthemes.com/blog/resources/how-to-use-and-embed-an-icon-font-on-your-website">Line Icons</a> and <a target="_blank" href="http://www.elegantthemes.com/blog/resources/elegant-icon-font">Elegant Icon Set</a> </p>
+		<p><strong>Icon Usage:</strong></p>
+		<p><code>&lt;i class="icon icon-NAME"&gt;&lt;/i&gt;</code></p>
+		<p><code>&lt;i class="icon icon-flag"&gt;&lt;/i&gt;</code> will give you a flag icon, who would have guessed!?</p>
+		<hr>
+	</div>
+	
+	<a id="sliders"></a>
+	<div class="medium-12 columns">
+		<h3><strong>5. Sliders</strong></h3>
+		<p>Pangaea uses WOO Themes Flexslider plugin as its primary slider manager. You can view all available options for the plugin at <a target="_blank" href="www.woothemes.com/flexslider/">WOO Themes website</a></p>
+		
+	</div>
+	
+	<div class="medium-11 columns right">
+		<p>Here are the JS declarations for the different slider types used in Pangaea: (note that you can add the class 'slider-fullscreen' to any slider to make it fullscreen)</p>
+		<ul>
+			<li><strong>Hero Slider:</strong><br />
+				<pre><code>
+$('.hero-slider').flexslider({
+        start: function () {
+            $('.slides li').each(function () {
+                $(this).find('.animated').addClass('animatedd fadeInUp');
+            });
+        },
+        before: function () {
+            $('.slides li').each(function () {
+                $(this).find('.animated').removeClass('animatedd fadeInUp');
+            });
+        },
+        after: function () {
+            $('.slides li').each(function () {
+                $(this).find('.animated').addClass('animated fadeInUp');
+            });
+        }
+    });
+				</code></pre>
+			</li>
+			
+			<li><strong>Testimonials Slider:</strong><br />
+				<pre><code>
+$('.testimonials-slider').flexslider({
+        directionNav: false
+    });
+				</code></pre>
+			</li>
+			
+			<li><strong>Client Logos Slider:</strong><br />
+				<pre><code>
+$('.clients-slider').flexslider({
+        animation: "slide",
+        minItems: 1,
+        maxItems: 5,
+        itemWidth: 50,
+        itemMargin: 0,
+        move: 1,
+        directionNav: false,
+        controlNav: false
+    });
+				</code></pre>
+			</li>
+			
+			<li><strong>Portfolio Slider:</strong><br />
+				<pre><code>
+$('.work-carousel').flexslider({
+        animation: "slide",
+        minItems: 3,
+        maxItems: 3,
+        itemWidth: 350,
+        itemMargin: 0,
+        move: 1,
+        controlNav: false
+    });
+				</code></pre>
+			</li>
+			
+			<li><strong>Generic Image Slider:</strong><br />
+				<pre><code>
+$('.slider').flexslider({});
+				</code></pre>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	
+	<a id="mail-form"></a>
+	<div class="medium-12 columns">
+		<h3><strong>6. Linking the mail form</strong></h3>
+		<p>Your mail form will not work unless you have your files running on a hosting server with PHP 5.  When you have your files ready on your hosting server, you need to edit the settings to make the email function work.</p>
+		<p>Open mail/mail.php and make the following changes:
+			<ul>
+				<li><strong>Line 10:</strong> Change to your own SMTP mail server and appropriate port number. Usually <code>mail.yourdomain.com</code> if you want to use your hosting server's email system.  Otherwise you can use your ISP mail server but beware you'll need to provide account login details either way.</li>
+				<li><strong>Line 11:</strong> Enter your email account username, usually the entire email address at your domain eg: <code>test@mediumra.re</code> .  You might need to create an email account in your cPanel for this if you don't already have one set up.  Otherwise you can use the mail info from your ISP.</li>
+				<li><strong>Line 12:</strong> Enter the password for your email account at your domain.  You might need to create an email account in your cPanel for this if you don't already have one set up.</li>
+				<li><strong>Line 20:</strong> Edit the subject for the email that will be sent to the recipient of your form.</li>
+				<li><strong>Line 22:</strong> Change the name and email address of the "From" person here.  This could be yourself or you could make one up and address could be <code>noreply@yourdomain.com</code> with a name of <code>Website Form</code></li>
+			</ul>
+		</p>
+	</div>
+
+	
+	
+
+</div><!--end of row-->
+
+            </div>
+          </div>
+         
+
+
+
+        </section>
+
+      </div>
+    </div>
+
+    <script src="http://foundation.zurb.com/docs/assets/js/templates.js"></script>
+    <script src="http://foundation.zurb.com/docs/assets/js/all.js"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(
+        ['_setAccount', 'UA-2195009-2'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-2195009-27'],
+        ['b._trackPageview']
+      );
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      $(document).foundation().foundation('joyride', 'start');
+    </script>
+  <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
